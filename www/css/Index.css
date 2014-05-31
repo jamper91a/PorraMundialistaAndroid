@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+@font-face {
+	font-family: 'Arimo', 'sans-serif';	
+	src: url(Arimo-Regular.ttf);
+}
+
+a{
+	font-family: 'Arimo', 'sans-serif';	
+	text-decoration:none;
+	font-size:31px;
+	/*font-weight:bold;*/
+	color:#FFF;
+}
+
+
+
+/*-------------------- INICIO CÓDIGO----------------- */
+
+body{
+	background-color: #3D7302;
+	background-image: url(../images/FondoPastoHome3.jpg);
+    background-size: 100% 100%;
+    background-repeat: repeat-y;
+	margin:0px;
+}
+table tr  td{
+	text-align: center;
+}
+
+
+#Contenido{
+	float:left;
+	width:100%;
+	margin-top:0px;
+	margin-left:0px;
+	display:inline-block;
+}
+
+#Contenedor ul{
+	float:left;
+	width:100%;
+	margin-top:0px;
+	margin-left:0px;
+	list-style-type: none;
+}
+
+#Contenedor li{
+	float:left;
+	width:100%;
+	margin-top:0px;
+	margin-left:0px;
+	display:inline-block;
+}
+
+li#crear{
+	float:left;
+	margin-top:0px;
+	margin-left:0px;
+	display:inline-block;
+}
+
+
+li#unirse{
+	float:left;
+	margin-top:-139px;
+	margin-left:138px;
+	display:inline-block;
+}
+
+
+li#marcadores{
+	float:left;
+	margin-top:0px;
+	margin-left:0px;
+	display:inline-block;
+}
+
+
+li#asiva{
+	float:left;
+	margin-top:-139px;
+	margin-left:138px;;
+	display:inline-block;
+}
+
+
+li#mundial{
+	float:left;
+	margin-top:0px;
+	margin-left:0px;
+	display:inline-block;
+}
+
+
+li#admpolla{
+	float:left;
+	margin-top:-139px;
+	margin-left:138px;;
+	display:inline-block;
+}
+
+
+#btReglamento{
+	width:100%;
+	height:50px;
+	margin-top:31px;
+	margin-left:0px;
+	background-color:#2f80bc;
+	border-color:#42afdd 4px 2px;
+	border-top-left-radius:24px;
+	border-top-right-radius:24px;
+	border-bottom-left-radius:24px;
+	border-bottom-right-radius:24px;
+	border-top:solid #24B7D0;
+	display:inline-block;
+	box-shadow:#999 2px 2px 5px;
+	text-align:center;
+}
+#btReglamento a{
+	width:100%px;
+	height:68px;
+	padding-top:12px;
+	display:inline-block;
+	text-align:center;
+	font-family: 'Arimo', 'sans-serif';
+	font-size:21px;
+	text-shadow:#333 2px 2px 5px;
+}

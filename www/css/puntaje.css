@@ -1,0 +1,283 @@
+@charset "utf-8";
+/* CSS Document */
+
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+@font-face {
+	font-family: 'Arimo', 'sans-serif';	
+}
+
+a{
+	font-family: 'Arimo', 'sans-serif';	
+	text-decoration:none;
+	font-size:31px;
+	font-weight:bold;
+	/*text-shadow:#666 2px 2px 5px;*/
+	color:#FFF;
+}
+
+
+
+/*-------------------- INICIO CÓDIGO----------------- */
+
+body{
+	background-image: url(../images/FondoPastoHome3.jpg);
+    background-size: 100%;
+    background-repeat: repeat-y;
+    margin: 0px
+}
+
+table.iconos{
+	width:100%;
+	height:151px;
+	background-color:#000;
+	margin-top:-3px;
+	margin-left:0px;
+}
+
+caption{
+	font-family: 'Arimo', 'sans-serif';
+	font-size:19px;
+	font-weight:bold;
+	color:#FFF;
+	text-align:center;
+	margin-top:7px;
+	margin-left:0px;
+	background-color:#000;
+	opacity:0.7;
+	height:40px;
+	padding-top:15px;
+}
+th#calendario{
+	width:400px;
+	text-align:center;
+}
+
+th#pito{
+	width:400px;
+	text-align:center;
+}
+
+th#marcador{
+	width:400px;
+	text-align:center;
+}
+
+th#copa{
+	width:400px;
+	text-align:center;
+}
+td.texto{
+	font-family: 'Arimo', 'sans-serif';
+	font-size:13px;
+	font-weight:bold;
+	color:#FFF;
+}
+
+
+#Contenedor{
+	float:left;
+	width:100%;
+	height:151px;
+	background-color:#FFF;
+	margin-top:-3px;
+	margin-left:0px;
+}
+#Contenedor h3{
+	font-family: 'Arimo', 'sans-serif';
+	font-size:19px;
+	font-weight:bold;
+	color:#2c75c0;
+	text-align:left;
+	margin-top:7px;
+	margin-left:0px;
+}
+#Contenedor #marcador{
+	float:left;
+	width:114px;
+	height:100px;
+	margin-top:35px;
+	margin-left:0px;
+}
+#Contenedor p{
+	float:left;
+	width:100%;
+	font-family: 'Arimo', 'sans-serif';
+	font-size:17px;
+	color:#b0c6e1;
+	text-align: left;
+	margin-top:-95px;
+	margin-left:115px;
+	
+}
+
+#Informacion{
+	width:100%;
+	height:auto;
+	margin-top:102px;
+	margin-left:0px;
+}
+
+#titulo{
+	width:100%;
+	height:50px;
+	background-color:#000;
+	opacity:0.7;
+}
+#titulo h1{
+	float:left;
+	width:100%;
+	height:50px;
+	font-family: 'Arimo', 'sans-serif';
+	font-size:20px;
+	font-weight:bold;
+	color:#FFF;
+	text-align:center;
+	margin-top:9px;
+	margin-left:0px;
+
+	
+}
+
+#imagenes{
+	float:left;
+	width:100%;
+	height:90px;
+	background-color:#000;
+	margin-top:-22px;
+	margin-left:0px;
+}
+#imagenes #imgadentro{
+	margin-top:10px;
+	margin-left:0px;
+}
+#imagenes #calendario{
+	float:left;
+	width:70px;
+	height:62px;
+	margin-top:0px;
+	margin-left:19px;
+}
+#imagenes #pito{
+	float:left;
+	width:70px;
+	height:62px;
+	margin-top:0px;
+	margin-left:33px;
+}
+#imagenes #marcador{
+	float:left;
+	width:70px;
+	height:55px;
+	margin-top:7px;
+	margin-left:27px;
+}
+#imagenes #copa{
+	float:left;
+	width:32px;
+	height:56px;
+	margin-top:7px;
+	margin-left:55px;
+}
+#imagenes p{
+	float:left;
+	font-family: 'Arimo', 'sans-serif';
+	font-size:13px;
+	font-weight:bold;
+	color:#FFF;
+	margin-top:0px;
+	margin-left:0px;
+}
+
+#imagenes p#pronos{
+	float:left;
+	margin-top:62px;
+	margin-left:-169px;
+}
+#imagenes p#real{
+	float:left;
+	margin-top:62px;
+	margin-left:-114px;
+}
+#imagenes p#punt{
+	float:left;
+	margin-top:62px;
+	margin-left:-57px;
+}
+#imagenes p#total{
+	float:left;
+	margin-top:62px;
+	margin-left:-9px;
+}
+
+#Informacion{
+	float:left;
+	width:100%;
+	margin-top:0px;
+	margin-left:0px;
+}
+
+table.titulo{
+	background-image:url(../images/FondoNegroFechas.svg);
+	background-repeat: repeat-x;
+}
+table.fechas{
+	background-image:url(../images/FondoNegroFechas.svg);
+	background-repeat: repeat-x;
+	margin-top:5px;
+	border:none;
+	border-style: hidden;
+}
+th{
+	font-family: 'Arimo', 'sans-serif';
+	font-size:13px;
+	font-weight:bold;
+	color:#FFF;
+	width:100px;
+	height:80px;
+	background-image:url(../images/FondoTabla.svg);
+	background-repeat:repeat-x;
+	
+	
+}
+
+th.fechaspartido{
+	background-image:url(../images/FondoTabla.svg);
+	background-repeat:repeat-x;
+}
+
+th.equipos{
+	background-image:url(../images/FondoTabla.svg);
+	background-repeat:repeat-x;
+}
+
+th.texto{
+	width:50px;
+}
+
+
+th.pronos{
+	background-color: #999;
+	width:50px;
+}
+th.real{
+	background-color:#333;
+	width:50px;
+}
+th.punt{
+	background-color:#999;
+	width:50px;
+}
+th.total{
+	background-color:#333;
+	width:50px;
+}
+.subtitulos{
+    height: 20px;
+}

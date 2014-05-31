@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>opcionesadmon</title>
+<link href="css/opcionesadmon.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+
+<link href="css/comun.css" rel="stylesheet" type="text/css">
+<script src='cordova.js'></script>
+
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.bpopup.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+    
+    
+<script type="text/javascript" src="js/9b.js"></script>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+</head>
+
+<body>
+
+	<Header>
+    
+    	<div id="botonesArriba">
+    
+            <div class="atras">
+                <a href="#"><img src="images/arrow-left.svg"></a>
+            </div>
+            
+            <div class="menu">
+                <a href="Index" class="btmenu">MENÚ</a>
+            </div>
+            
+            <div class="config">
+                <a href="#"><img src="images/icoconfig.svg"></a>
+    
+            </div>
+        
+        </div>
+    	
+    	<div class="Logo2">
+        	<a href="#" >
+                <img src="images/logoPMgrande.png" class="logo2"/>
+            </a>
+    	</div>
+    </Header>
+    
+    	<div align="center" style="margin-left:10px; margin-right:10px;"> 
+            <br>
+            <div id="contenedor">
+                 
+                 <div id="btninfogeneral" class="botonF" style="border-radius:0px;margin-top:-18px">
+                    <a href="#">Información General</a>
+                </div>
+                
+                <div id="contenido1" style="display:none">
+                    
+                    <div id="tabla">
+                        <div id="Nombres">
+                            
+                            <table class="nombres" width="100%" id="invitados">
+                                <tr>
+                                    <td>
+                                        <p id="conten1"></p>
+                                    </td>
+                                </tr>
+                                
+                            </table>
+              
+                            
+                        </div>
+                          <!--<textarea name="" cols="1" rows="1" id="nombre2" label="">Nombre</textarea>-->
+                          
+                          
+                          <!--<textarea name="" cols="1" rows="1" id="mail" label="">Email</textarea>-->
+						  
+                    </div>
+                    
+                </div>
+                <br><br>
+                <div id="btnparticipantes" class="botonF" style="border-radius:0px;margin-top:-18px">
+                    <a href="#">Participantes</a>
+                </div>
+                
+                <div id="contenido2" style="display:none">
+                    <div id="tabla">
+                        <div id="Nombres">
+                            
+                            <table class="nombres" width="100%"  id="invitados">
+                                <tr>
+                                    <td>
+                                        <p id="conten2" style="margin:0px;"></p>
+                                    </td>
+                                </tr>
+                                
+                            </table>
+              
+                            
+                        </div>
+                          <!--<textarea name="" cols="1" rows="1" id="nombre2" label="">Nombre</textarea>-->
+                          
+                          
+                          <!--<textarea name="" cols="1" rows="1" id="mail" label="">Email</textarea>-->
+						  
+                    </div>
+                </div>
+                <br><br>
+                 <div id="btninvitar" class="botonF" style="border-radius:0px;margin-top:-18px">
+                    <a href="#">
+                        Invitar a otros a unirse
+                    </a>
+                </div>
+                <br><br>
+                <div id="contenido3" style="display:none">
+                    <div id="nombreforma">
+                         
+                         <textarea name="" cols="1" rows="1" id="nombre2" label="" placeholder="Nombre"></textarea>
+                        <textarea name="" cols="1" rows="1" id="mail" label="" placeholder="Email"></textarea>
+            <br><br>            
+          <div align="center">
+          
+            <br>
+             <div id="btnAgregar" class="boton">
+                    <a href="#" >Agregar</a>
+             </div>
+                    
+            <div id="tablaemail">
+                <div id="Nombres">
+                <table class="nombres" width="100%" id="invitados2">
+                    
+                </table>
+                </div>
+                
+                
+            </div><!---fin de tablaemail-->
+            <div id="btnInvitar" class="boton" style="margin-bottom:10px;margin-top:-90px;margin-top:-18px">
+                    <a href="#" >Invitar</a>
+                </div>
+            
+            
+                    
+                        </div><!---fin de nombreforma-->
+                    </div><!---fin de contenedor3-->
+         </div>           
+                    
+                    
+                    
+        
+                
+                
+                
+                <div id="btnSalir" class="botonF" style="border-radius:0px;" >
+                    <a href="#" >Abandonar Porra</a>
+                </div>		
+                
+         </div>
+<div id="element_to_pop_up">
+    <table width="100%">
+        <tr>
+            <td>
+                <div id="mensaje">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="bt" id="aceptar">
+                    <a >Aceptar</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="bt" id="cancelar">
+                    <a >Cancelar</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="bt" id="continuar">
+                    <a >Continuar</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>                   
+ </body><!---fin de body-->
+</html>

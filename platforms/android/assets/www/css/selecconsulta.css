@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS Document */
+
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+@font-face {
+	font-family: 'Arimo', 'sans-serif';	
+}
+
+a{
+	font-family: 'Arimo', 'sans-serif';	
+	text-decoration:none;
+	font-size:31px;
+	font-weight:bold;
+	color:#FFF;
+}
+
+
+
+/*-------------------- INICIO CÓDIGO----------------- */
+
+body{
+	/*background-image: url(../images/BGIntro.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;*/
+    margin: 0px;
+}
+
+#Contenido{
+	width:100%;
+	margin-top:25px;
+	margin-bottom:20px;
+	margin-left:0px;
+	font-family: 'Arimo', 'sans-serif';
+	font-weight:lighter;
+	font-size:21px;
+	text-align:center;
+	color:#338cce;
+	display:inline-block;
+	background-color:#FFF;
+	opacity:0.9;
+	width:90%;
+	margin-left:2%;
+	margin-right:2%;
+	/*padding-right:2%;
+	padding-left:4%;*/
+}
+
+table{
+	width:100%;
+	height:40px;
+	border:none;
+	border-bottom-left-radius:12px;
+	border-bottom-right-radius:12px;
+	border-top-left-radius:12px;
+	border-top-right-radius:12px;
+    margin-top: -10px;
+}
+caption{
+	width:100%;
+	background-color:#CCC;
+	opacity:0.8;
+	font-family: 'Arimo', 'sans-serif';
+	font-size:23px;
+	font-weight:bold;
+	text-align:center;
+    margin-bottom: 8px;
+	
+}
+tr{
+	font-family: 'Arimo', 'sans-serif';
+	font-size:19px;
+	text-align:left;
+	font-weight:lighter;
+	height:60%;
+}
+th.cuadro{
+	width:30px;
+	height:30px;
+	/*background-color:#d9ebf7;*/
+	font-family: 'Arimo', 'sans-serif';
+	font-size:20px;
+	color:#3f9dd9;
+	border-bottom-left-radius:12px;
+	border-bottom-right-radius:12px;
+	border-top-left-radius:12px;
+	border-top-right-radius:12px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+#btPuntaje{
+	width:100%;
+	max-width:360px;
+	height:50px;
+	margin-top:31px;
+	margin-left:0px;
+	background-color:#2f80bc;
+	border-color:#42afdd;
+	border-top-left-radius:24px;
+	border-top-right-radius:24px;
+	border-bottom-left-radius:24px;
+	border-bottom-right-radius:24px;
+	border-top:solid #24B7D0;
+	display:inline-block;
+	box-shadow:#999 2px 2px 5px;
+	text-align:center;
+}
+#btPuntaje a{
+	width:100%;
+	height:68px;
+	padding-top:12px;
+	display:inline-block;
+	text-align:center;
+	font-family: 'Arimo', 'sans-serif';
+	font-size:21px;
+	text-shadow:#333 2px 2px 5px;
+}
+
+#btPosicion{
+	width:100%;
+	max-width:360px;
+	height:50px;
+	margin-top:31px;
+	margin-left:0px;
+	background-color:#2f80bc;
+	border-color:#42afdd;
+	border-top-left-radius:24px;
+	border-top-right-radius:24px;
+	border-bottom-left-radius:24px;
+	border-bottom-right-radius:24px;
+	border-top:solid #24B7D0;
+	display:inline-block;
+	box-shadow:#999 2px 2px 5px;
+	text-align:center;
+}
+#btPosicion a{
+	width:100%;
+	height:68px;
+	padding-top:12px;
+	display:inline-block;
+	text-align:center;
+	font-family: 'Arimo', 'sans-serif';
+	font-size:21px;
+	text-shadow:#333 2px 2px 5px;
+}

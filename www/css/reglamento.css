@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+@font-face {
+	font-family: 'Arimo', 'sans-serif';
+}
+
+a{
+	font-family: 'Arimo', 'sans-serif';
+	text-decoration:none;
+	font-size:31px;
+	font-weight:bold;
+	<!--text-shadow:#666 2px 2px 5px;-->
+	color:#FFF;
+}
+
+
+
+/*-------------------- INICIO CÓDIGO----------------- */
+
+body{
+	/*background-image: url(../images/BGIntro.png);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+}
+
+
+
+#Contenedor{
+	width:100%;
+
+	background-image:url(../images/FondoBlancoGrande.svg);
+	background-repeat:no-repeat;
+	margin-left:0px;
+	border-bottom-left-radius:24px;
+	border-bottom-right-radius:24px;
+	border-top-left-radius:24px;
+	border-top-right-radius:24px;
+	width:90%;
+	max-width:400px;
+	margin-left:2%;
+	margin-right:2%;
+	padding-right:2%;
+	padding-left:4%;
+}
+
+#Contenedor h1{
+	float:left;
+	width:100%;
+	font-family: 'Arimo', 'sans-serif';
+	font-size:19px;
+	font-weight:bold;
+	color: #3588C9;
+	text-align: center;
+	margin-top:21px;
+	margin-left:0px;
+	background-color:#CCC;
+
+}
+
+#Contenedor h4{
+	float:left;
+	width:100%;
+	font-family: 'Arimo', 'sans-serif';
+	font-size:14px;
+	font-weight:bold;
+	color:#3588C9;
+	text-align: center;
+	margin-top:-10px;
+	margin-left:0px;
+
+}
+
+#info{
+	margin-top:0px;
+	margin-left:0px;
+}
+
+#Contenedor li{
+	width:100%;
+	font-family: 'Arimo', 'sans-serif';
+	font-size:17px;
+	color:#3588C9;
+	text-align:left;
+	margin-top:0px;
+	margin-left:0px;
+	list-style:none;
+}
+

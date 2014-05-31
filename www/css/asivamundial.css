@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* CSS Document */
+
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+@font-face {
+	font-family: 'Arimo', 'sans-serif';	
+}
+
+a{
+	font-family: 'Arimo', 'sans-serif';	
+	text-decoration:none;
+	font-size:31px;
+	font-weight:bold;
+	/*text-shadow:#666 2px 2px 5px;*/
+	color:#FFF;
+}
+
+
+
+
+/*-------------------- INICIO CÓDIGO----------------- */
+
+body{
+	background-image: url(../images/FondoPastoHome3.jpg);
+    background-size: 100%;
+    background-repeat: repeat;
+    margin: 0px;
+}
+#Contenedor{
+	float:left;
+	width:100%;
+	height:151px;
+	background-color:#FFF;
+	margin-top:-3px;
+	margin-left:0px;
+}
+#Contenedor h3{
+	font-family: 'Arimo', 'sans-serif';
+	font-size:19px;
+	font-weight:bold;
+	color:#2c75c0;
+	text-align:left;
+	margin-top:7px;
+	margin-left:0px;
+}
+#Contenedor #marcador{
+	float:left;
+	width:114px;
+	height:100px;
+	margin-top:35px;
+	margin-left:0px;
+}
+#Contenedor p{
+	float:left;
+	width:100%;
+	font-family: 'Arimo', 'sans-serif';
+	font-size:17px;
+	color:#b0c6e1;
+	text-align: left;
+	margin-top:-95px;
+	margin-left:115px;
+	
+}
+
+#Informacion{
+	width:100%;
+	height:auto;
+	margin-left:0px;
+}
+
+#titulo{
+	width:100%;
+	height:50px;
+	background-color:#000;
+	opacity:0.7;
+	
+}
+#titulo h1{
+	float:left;
+	width:100%;
+	height:50px;
+	font-family: 'Arimo', 'sans-serif';
+	font-size:20px;
+	font-weight:bold;
+	color:#FFF;
+	text-align:center;
+	/*margin-top:9px;*/
+	margin-left:0px;
+
+	
+}
+
+table.pronostico{
+	background-image:url(../images/FondoNegro.svg);
+	background-repeat:no-repeat;
+	width:100%;
+
+}
+
+#tblJuegos tr{
+	
+	font-family: 'Arimo', 'sans-serif';
+	font-size:18px;
+	font-weight:bold;
+	color:#FFF;
+	margin-top:0px;
+	margin-left:0px;
+    height: 30px;
+}
+#tblJuegos td{
+
+}
+#tblJuegos th{
+	float:left;
+
+}
+
+#tblJuegos th.fecha{
+	float:left;
+	width:100%;
+	background-image:url(../images/FondoNegroFechas.svg);
+	background-repeat:no-repeat;
+	text-align:center;
+	margin-top:0px;
+	margin-left:0px;
+}
+
+#tblJuegos th.equipo1{
+	alignment-adjust:central;
+	margin-top:0px;
+    text-align: center;
+	/*margin-left:35px;*/
+}
+#tblJuegos th.nombre1{
+	alignment-adjust:central;
+	margin-top:-5px;
+	/*margin-left:10px;*/
+}
+#tblJuegos th.cuadrito1, th.cuadrito2{
+	alignment-adjust:central;
+	margin-top:3px;
+    height: 30px;
+    width: 35%;
+	/*margin-left:10px;*/
+}
+#tblJuegos th.vs{
+	alignment-adjust:central;
+	margin-top:7px;
+	/*margin-left:20px;*/
+}
+/*th.cuadrito2{
+	alignment-adjust:central;
+	margin-top:3px;
+	margin-left:20px;
+}*/
+#tblJuegos th.equipo2{
+	alignment-adjust:central;
+	margin-top:0px;
+    text-align: center;
+	/*margin-left:10px;*/
+}
+#tblJuegos th.nombre2{
+	alignment-adjust:central;
+	margin-top:-5px;
+	/*margin-left:10px;*/
+}
+.pronostico th{
+    height: 30px;
+    padding: 0px;
+    margin: 0px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.bandera{
+    /*width: 70%;*/
+    width: 65px;
+}
+.fila{
+    font-size: 15px;
+    text-align: center;
+}

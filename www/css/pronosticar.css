@@ -1,0 +1,247 @@
+@charset "utf-8";
+/* CSS Document */
+
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+@font-face {
+	font-family: 'Arimo', 'sans-serif';	
+}
+
+a{
+	font-family: 'Arimo', 'sans-serif';	
+	text-decoration:none;
+	font-size:31px;
+	font-weight:bold;
+	/*text-shadow:#666 2px 2px 5px;*/
+	color:#FFF;
+}
+
+
+
+
+/*-------------------- INICIO CÓDIGO----------------- */
+
+body{
+	background-image: url(../images/FondoPastoHome3.jpg);
+    background-size: 100%;
+    background-repeat: repeat-y;
+    margin: 0px;
+}
+
+#Contenedor{
+	width:100%;
+	
+	width:90%;
+	max-width:530px;
+	margin-left:2%;
+	margin-right:2%;
+	/*
+    height:180px;
+	background-color:#FFF;
+    padding-right:2%;
+	padding-left:4%;
+    margin-top:-3px;
+	margin-left:0px;*/
+}
+#Contenedor h3{
+	font-family: 'Arimo', 'sans-serif';
+	font-size:19px;
+	font-weight:bold;
+	color:#2c75c0;
+	text-align:left;
+	/*margin-top:7px;*/
+	margin-left:0px;
+    text-align: center;
+
+}
+#Contenedor #marcador{
+	float:left;
+	width:114px;
+	height:100px;
+	/*margin-top:35px;
+	margin-left:0px;*/
+}
+/*#Contenedor p{
+	float:left;
+	font-family: 'Arimo', 'sans-serif';
+	font-size:15px;
+	color:#b0c6e1;
+	text-align: justify;
+	margin-top:-95px;
+	margin-left:115px;
+	
+}*/
+#Contenedor .texto{
+	font-family: 'Arimo', 'sans-serif';
+	font-size:15px;
+	color:#2c75c0;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+	
+}
+
+#Informacion{
+	width:100%;
+	height:auto;
+	margin-top:10px;
+	margin-left:0px;
+	width:90%;
+	max-width:530px;
+	margin-left:2%;
+	margin-right:2%;
+	/*padding-right:2%;
+	padding-left:4%;*/
+}
+
+#titulo{
+	width:100%;
+	height:50px;
+	background-color:#000;
+	opacity:0.7;
+}
+#titulo h1{
+	float:left;
+	width:100%;
+	height:50px;
+	font-family: 'Arimo', 'sans-serif';
+	font-size:20px;
+	font-weight:bold;
+	color:#FFF;
+	text-align:center;
+	/*margin-top:9px;*/
+	margin-left:0px;
+    margin-bottom: 7px;
+
+	
+}
+
+table.pronostico{
+	background-image:url(../images/FondoNegro.svg);
+	background-repeat:no-repeat;
+	width:100%;
+
+}
+
+table.pronostico tr{
+	
+	font-family: 'Arimo', 'sans-serif';
+	font-size:13px;
+	font-weight:bold;
+	color:#FFF;
+	margin-top:0px;
+	margin-left:0px;
+    height: 30px;
+}
+table.pronostico td{
+
+}
+table.pronostico th{
+	float:left;
+
+}
+
+table.pronostico th.fecha{
+	float:left;
+	width:100%;
+	background-image:url(../images/FondoNegroFechas.svg);
+	background-repeat:no-repeat;
+	text-align:center;
+	margin-top:0px;
+	margin-left:0px;
+}
+
+table.pronostico th.equipo1{
+	alignment-adjust:central;
+	margin-top:0px;
+	/*margin-left:35px;*/
+}
+table.pronostico th.nombre1{
+	alignment-adjust:central;
+	/*margin-top:7px;*/
+	/*margin-left:10px;*/
+}
+table.pronostico th.cuadrito1, th.cuadrito2{
+	alignment-adjust:central;
+	margin-top:3px;
+    height: 30px;
+    width: 35%;
+	/*margin-left:10px;*/
+}
+table.pronostico th.vs{
+	alignment-adjust:central;
+	margin-top:7px;
+	/*margin-left:20px;*/
+}
+/*th.cuadrito2{
+	alignment-adjust:central;
+	margin-top:3px;
+	margin-left:20px;
+}*/
+table.pronostico th.equipo2{
+	alignment-adjust:central;
+	margin-top:0px;
+	/*margin-left:10px;*/
+}
+table.pronostico th.nombre2{
+	alignment-adjust:central;
+	/*margin-top:7px;*/
+	/*margin-left:10px;*/
+}
+
+
+
+#btGuardar{
+	width:100%;
+	height:50px;
+
+	background-color:#2f80bc;
+	border-color:#42afdd 4px 2px;
+	/*border-top:solid #24B7D0;*/
+	display:inline-block;
+	/*box-shadow:#999 2px 2px 5px;*/
+	text-align:center;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+#btGuardar a{
+	width:100%px;
+	height:68px;
+	padding-top:12px;
+	display:inline-block;
+	text-align:center;
+	font-family: 'Arimo', 'sans-serif';
+	font-size:21px;
+	/*text-shadow:#333 2px 2px 5px;*/
+}
+input[type=number]{
+    width: 80px;
+    padding: 0px;
+    height: 30px;
+    border: none;
+    font-size: 17px;
+    text-align: center;
+}
+.pronostico th{
+    height: 30px;
+    padding: 0px;
+    margin: 0px;
+    line-height: 30px;
+}
+#lnkForecast{
+    font-size: 12px;
+    height: 25px;
+    background-image: url(../images/find.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: right;
+    padding-right: 25px;
+}

@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Premium</title>
+<link href="css/premium.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+	<link rel="stylesheet" href="css/style.css" />
+<link href="css/comun.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" charset="utf-8" src="inappbilling.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery.bpopup.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/7.js"></script>
+</head>
+
+<body>
+
+	<Header>
+    
+    	<div id="botonesArriba">
+    
+            <div class="atras">
+                <a href="#"><img src="images/arrow-left.svg"></a>
+            </div>
+            
+            <div class="menu">
+                <a href="Index" class="btmenu">MENÚ</a>
+            </div>
+            
+            <div class="config">
+                <a href="#"><img src="images/icoconfig.svg"></a>
+    
+            </div>
+        
+        </div>
+    	
+    	<div class="Logo">
+        	<a href="#" >
+                <img src="images/logoPMgrande.png" class="logo"/>
+            </a>
+    	</div>
+    </Header>
+    	 
+         <div align="center">
+            <div id="Contenido">
+                <div id="Texto">
+                    <h4>¿Quieres tener más posibilidades<br>
+                     de ganar la porra?</h4>
+                    <p>Adquiere el servicio PREMIUM y tendrás estos beneficios:<br><br></p>
+                    
+                    <ul>
+                        <li>Acceso inmediato a informacionn historica de
+                         los últimos partidos jugados entre
+                         competidores,antes del mundial.
+        </li>
+                        <li>Podrás conocer toda la tabla de posiciones
+                          de la porra</li>
+                        <li>Tendrás la posibilidad de conocer los
+                        pronósticos de tus competidores y sus
+                         puntajes día a día</li>
+                    </ul>
+                </div>
+                
+                
+                
+                <div id="btAdquirir">
+                    <a href="#" id="btnPremiun">Adquirir Premium Ya</a>
+                </div>
+               
+                
+                <div id="btContinuar">
+                    <a href="2.html">Continuar como Básico</a>
+                </div>
+                
+            </div>
+       </div>
+<div id="element_to_pop_up">
+    <table width="100%">
+        <tr>
+            <td>
+                <div id="mensaje">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="bt" id="aceptar">
+                    <a >Aceptar</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="bt" id="cancelar">
+                    <a >Cancelar</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="bt" id="continuar">
+                    <a >Continuar</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>       
+
+</body>
+</html>
+<!--
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>In App Billing</title>
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script type="text/javascript" charset="utf-8" src="inappbilling.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            function successHandler (result) {
+                var strResult = "";
+                if(typeof result === 'object') {
+                    strResult = JSON.stringify(result);
+                } else {
+                    strResult = result;
+                }
+                alert("SUCCESS: \r\n"+strResult );
+            }
+
+            function errorHandler (error) {
+                alert("ERROR: \r\n"+error );
+            }
+
+            // Click on init button
+            function init(){
+                // Initialize the billing plugin
+                inappbilling.init(successHandler, errorHandler, {showLog:true});
+            }
+
+            // Click on purchase button
+            function buy(){
+                // make the purchase
+                inappbilling.buy(successHandler, errorHandler,"adquiriripremium");
+
+            }
+
+            // Click on ownedProducts button
+            function ownedProducts(){
+                // Initialize the billing plugin
+                inappbilling.getPurchases(successHandler, errorHandler);
+
+            }
+
+            // Click on Consume purchase button
+            function consumePurchase(){
+
+                inappbilling.consumePurchase(successHandler, errorHandler, "gas");
+            }
+
+            // Click on subscribe button
+            function subscribe(){
+                // make the purchase
+                inappbilling.subscribe(successHandler, errorHandler,"infinite_gas");
+
+            }
+
+            // Click on Query Details button
+            function getDetails(){
+                // Query the store for the product details
+                inappbilling.getProductDetails(successHandler, errorHandler, ["gas","infinite_gas"]);
+
+            }
+
+            // Click on Get Available Products button
+            function getAvailable(){
+                // Get the products available for purchase.
+                inappbilling.getAvailableProducts(successHandler, errorHandler);
+
+            }                       
+
+        </script>
+
+    </head>
+    <body>
+        <h1>Hello World</h1>
+        <button onclick="init();">Initalize the billing plugin</button>
+        <button onclick="buy();">Purchase</button>
+        <button onclick="ownedProducts();">Owned products</button>
+        <button onclick="consumePurchase();">Consume purchase</button>
+        <button onclick="subscribe();">Subscribe</button>
+        <button onclick="getDetails();">Query Details</button>
+        <button onclick="getAvailable();">Get Available Products</button>
+    </body>
+</html>-->

@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Registro</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+<link href="css/registro.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+<link href="css/comun.css" rel="stylesheet" type="text/css">
+<script src='intelxdk.js'></script>
+<script src='xhr.js'></script>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery.bpopup.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/1b.js"></script>
+	
+</head>
+
+<body>
+
+	<Header>
+    	<div class="Logo">
+        	<a href="#" >
+                <img src="images/logoPMgrande.png" class="logo"/>
+            </a>
+    	</div>
+    </Header>
+    
+    <div id="Contenido" >
+				<!--<textarea name="" cols="1" rows="1" id="txtNombres" label="">Nombre y Apellido</textarea>-->
+				<input id="txtNombres" type="text" placeholder="Nombres y Apellidos" />
+              <!--<textarea name="" cols="1" rows="1" id="nick" label="">Nickname o Alias</textarea>-->
+				<input id="txtNick" maxlength="12" type="text" placeholder="Nickname o apodo" />
+              <!--<textarea name="" cols="1" rows="1" id="mail" label="">Email</textarea>-->
+				<input id="txtEmail" type="email" placeholder="Correo electrónico" />
+        
+                <input id="txtClave" type="password" placeholder="Clave" />
+				<!--<input id="txtPass" type="password" placeholder="Clave" value="123456789" />-->
+				
+    </div>	
+    <div align="center">
+        <div id="btnRegistro" class="boton">
+            <a href="#" id="btnRegistrar">Registrarse</a>
+        </div>
+    </div>
+    <br>
+    <div align="center">
+        <div id="btnRegistro" class="boton" >
+            <a href="#" id="btnLogin">Iniciar sesion</a>
+        </div>
+    </div>
+        
+        
+<div id="element_to_pop_up">
+    <table width="100%">
+        <tr>
+            <td>
+                <div id="mensaje">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="bt" id="aceptar">
+                    <a >Aceptar</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="bt" id="cancelar">
+                    <a >Cancelar</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="bt" id="continuar">
+                    <a >Continuar</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>   
+    
+
+</body>
+</html>

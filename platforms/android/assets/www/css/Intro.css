@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+@font-face {
+	font-family: 'Arimo', 'sans-serif';	
+}
+
+a{
+	text-decoration:none;
+	font-size:31px;
+	font-weight:bold;
+	color:#FFF;
+}
+
+
+
+/*-------------------- INICIO CÓDIGO----------------- */
+
+body{
+	background-image: url(../images/BGIntro.jpg);
+	background-size:100% auto;
+    background-repeat: no-repeat;
+}
+
+#Logo{
+	width:100%;
+	margin-top:20px;
+	margin-left:0px;
+	display:inline-block;
+}
+
+#Contenido{
+	width:100%;
+	height:162px;
+	margin-top:-26px;
+	margin-left:243px;
+	display:inline-block;
+}
+
+
+#texto{
+	float:left;
+	width:100%;
+	height:33px;
+	margin-top:0px;
+	margin-left:0px;
+	font-family: 'Allerta', sans-serif;
+	color: #FFF;
+	font-size:18px;
+	word-spacing:0px
+}
+#texto p{
+	margin-top:129px;
+	margin-left:-126px;
+}
+
+#LogoEmpresa{
+	float:left;
+	width:100%;
+	height:auto;
+	margin-top:0px;
+	margin-left:0px;
+	display:inline-block;
+}
+

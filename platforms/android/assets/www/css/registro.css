@@ -1,0 +1,211 @@
+@charset "utf-8";
+/* CSS Document */
+
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+@font-face {
+	font-family: 'Arimo', 'sans-serif';	
+}
+
+a{
+	font-family: 'Arimo', 'sans-serif';	
+	text-decoration:none;
+	font-size:31px;
+	font-weight:bold;
+	color:#FFF;
+}
+
+
+
+/*-------------------- INICIO CÓDIGO----------------- */
+
+body{
+	background-image:;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+#Header{
+	width:100%;
+	margin-top:0px;
+	margin-left:0px;
+}
+
+.Logo{
+	clear: both;
+	margin-top:0px;
+	/*margin-left:80px;*/
+	width:100%;
+	height:108px;
+	display: inline-block;
+	text-align:center;
+}
+.Logo a{
+	width:307px;
+	height:108px;
+	display:inline-block;
+    /*float:right;*/
+	background-size: contain;	
+}
+
+.Logo .logo{
+	/*background-image: url(../images/logoPMgrande.svg);
+	background-repeat:no-repeat;*/
+	margin-top:0px;
+	margin-left:0px;
+	width:70%;
+}
+
+#Contenido{
+	width:100%;
+	margin-top:45px;
+	margin-left:0px;
+	font-family: 'Arimo', 'sans-serif';
+	font-weight:lighter;
+	font-size:32px;
+	text-align:center;
+	color:#338cce;
+	display:inline-block;
+}
+
+
+#txtNombres{
+	float:left;
+	width:100%;
+	height:34px;
+	background-color:#d9ebf7;
+	margin-top:0px;
+	margin-left:0px;
+	padding-top:10px;
+	padding-left:20px;
+	font-family: 'Arimo', 'sans-serif';
+	font-size:20px;
+	color:#3f9dd9;
+	border-bottom-left-radius:12px;
+	border-bottom-right-radius:12px;
+	border-top-left-radius:12px;
+	border-top-right-radius:12px;
+	border: none;
+	display:inline-block;
+	width:90%;
+	margin-left:2%;
+	margin-right:2%;
+	padding-right:2%;
+	padding-left:4%;
+}
+#txtNick{
+	float:left;
+	width:100%;
+	height:34px;
+	background-color:#d9ebf7;
+	margin-top:2px;
+	margin-left:0px;
+	padding-top:10px;
+	padding-left:20px;
+	font-family: 'Arimo', 'sans-serif';
+	font-size:20px;
+	color:#3f9dd9;
+	border-bottom-left-radius:12px;
+	border-bottom-right-radius:12px;
+	border-top-left-radius:12px;
+	border-top-right-radius:12px;
+	border: none;
+	display:inline-block;
+	width:90%;
+	margin-left:2%;
+	margin-right:2%;
+	padding-right:2%;
+	padding-left:4%;
+}
+#txtEmail{
+	float:left;
+	width:100%;
+	height:34px;
+	background-color:#d9ebf7;
+	margin-top:2px;
+	margin-left:0px;
+	padding-top:10px;
+	padding-left:20px;
+	font-family: 'Arimo', 'sans-serif';
+	font-size:20px;
+	color:#3f9dd9;
+	border-bottom-left-radius:12px;
+	border-bottom-right-radius:12px;
+	border-top-left-radius:12px;
+	border-top-right-radius:12px;
+	border: none;
+	display:inline-block;
+	width:90%;
+	margin-left:2%;
+	margin-right:2%;
+	padding-right:2%;
+	padding-left:4%;
+}
+#txtClave{
+	float:left;
+	width:100%;
+	height:34px;
+	background-color:#d9ebf7;
+	margin-top:2px;
+	margin-left:0px;
+	padding-top:10px;
+	padding-left:20px;
+	font-family: 'Arimo', 'sans-serif';
+	font-size:20px;
+	color:#3f9dd9;
+	border-bottom-left-radius:12px;
+	border-bottom-right-radius:12px;
+	border-top-left-radius:12px;
+	border-top-right-radius:12px;
+	border: none;
+	display:inline-block;
+	width:90%;
+	margin-left:2%;
+	margin-right:2%;
+	padding-right:2%;
+	padding-left:4%;
+}
+
+
+#btRegistro{
+	width:100%;
+	max-width:360px;
+	height:50px;
+	margin-top:31px;
+	margin-left:0px;
+	background-color:#2f80bc;
+	border-color:#42afdd 4px 2px;
+	border-top-left-radius:24px;
+	border-top-right-radius:24px;
+	border-bottom-left-radius:24px;
+	border-bottom-right-radius:24px;
+	border-top:solid #24B7D0;
+	display:inline-block;
+	box-shadow:#999 2px 2px 5px;
+	text-align:center;
+}
+/*#btContinuar a{
+	width:100%;
+	padding-top:12px;
+	display:inline-block;
+	text-align:center;
+	text-shadow:#333 2px 2px 5px;
+	font-size:21px;
+}
+*/
+.boton a{
+	width:100%px;
+	height:68px;
+	padding-top:12px;
+	display:inline-block;
+	text-align:center;
+	font-family: 'Arimo', 'sans-serif';
+	font-size:21px;
+	text-shadow:#333 2px 2px 5px;
+}

@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Puntaje día a día</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+<link href="css/puntaje.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+<link href="css/comun.css" rel="stylesheet" type="text/css">
+<script src='cordova.js'></script>
+
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery.bpopup.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/6b.js"></script>
+</head>
+
+<body>
+
+	<Header>
+    
+    	<div id="botonesArriba">
+    
+            <div class="atras">
+                <a href="#"><img src="images/arrow-left.svg"></a>
+            </div>
+            
+            <div class="menu">
+                <a href="Index" class="btmenu">MENÚ</a>
+            </div>
+            
+            <div class="config">
+                <a href="#"><img src="images/icoconfig.svg"></a>
+    
+            </div>
+        
+        </div>
+    	
+    	<div class="Logo">
+        	<a href="#" >
+                <img src="images/logoPMgrande.png" class="logo"/>
+            </a>
+    	</div>
+    </Header>
+    
+   		<div align="center">
+            <div id="Informacion">
+            	
+                <table id="tblDatos" class="iconos" width="100%">
+                      <caption>
+                        Puntaje día a día
+                      </caption>
+                      <tr>
+                        <th  id="calendario" scope="col"><img src="images/calendario.png" id="calendario"></th>
+                        <th  id="pito" scope="col"><img src="images/pito.png" id="pito"></th>
+                        <th colspan="2" id="marcador" scope="col"><img src="images/marcador.png" id="marcador"></th>
+                        <th colspan="2" id="copa" scope="col"><img src="images/copa.png" id="copa"></th>
+                       
+                      </tr>
+                    <tr>
+                            <th class="subtitulos"></th>
+                            <th class="subtitulos"></th>
+                            <th class="subtitulos">PRON</th>
+                            <th class="subtitulos">REAL</th>
+                            <th class="subtitulos">PUNT</th>
+                            <th class="subtitulos">ACUM</th>
+                    </tr>
+
+               </table>
+                </div>	
+                
+        </div>
+<div id="element_to_pop_up">
+    <table width="100%">
+        <tr>
+            <td>
+                <div id="mensaje">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="bt" id="aceptar">
+                    <a >Aceptar</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="bt" id="cancelar">
+                    <a >Cancelar</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="bt" id="continuar">
+                    <a >Continuar</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>   
+   
+</body>
+</html>

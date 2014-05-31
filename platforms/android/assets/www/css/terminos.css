@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* CSS Document */
+
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+@font-face {
+	font-family: 'Arimo', 'sans-serif';	
+}
+
+a{
+	font-family: 'Arimo', 'sans-serif';	
+	text-decoration:none;
+	font-size:31px;
+	font-weight:bold;
+	/*text-shadow:#666 2px 2px 5px;*/
+	color:#FFF;
+}
+
+
+
+/*-------------------- INICIO CÓDIGO----------------- */
+
+body{
+	background-image: url(../images/BGIntro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+}
+
+#Header{
+	width:100%;
+	margin-top:0px;
+	margin-left:0px;
+}
+
+
+#botonesArriba{
+	width:100%;
+	height:40px;
+	background-color:#f3f3f7;
+}
+#botonesArriba a{
+	color:#0e67a9;
+	font-size:30px;
+	font-weight:bold;
+}
+#botonesArriba .atras{
+	float:left;
+	width:10%;
+	margin-top:5px;
+	margin-left:7px;
+	display:inline-block;
+}
+#botonesArriba .menu{
+	float:left;
+	width:80%;
+	margin-top:10px;
+	/*margin-left:175px;*/
+	display:inline-block;
+	text-align: center;
+}
+#botonesArriba .menu a{
+	font-size:21px;
+}
+#botonesArriba .config{
+	float:right;
+	width:10%;
+	margin-top:-30px;
+	/*margin-left:378px;*/
+	display:inline-block;
+}
+
+
+.Logo{
+	clear: both;
+	margin-top:0px;
+	width:100%;
+	height:108px;
+	display: inline-block;
+	text-align:center;
+}
+.Logo a{
+	width:307px;
+	height:108px;
+	display:inline-block;
+    /*float:right;*/
+	background-size: contain;	
+}
+
+.Logo .logo{
+	margin-top:0px;
+	margin-left:0px;
+	width:70%;
+}
+
+#Contenedor{
+	width:100%;
+	height:450px;
+	background-image:url(../images/FondoBlancoGrande.svg);
+	background-repeat:no-repeat;
+	margin-left:0px;
+	border-bottom-left-radius:24px;
+	border-bottom-right-radius:24px;
+	border-top-left-radius:24px;
+	border-top-right-radius:24px;
+}
+
+#Contenedor h1{
+	float:left;
+	width:100%;
+	font-family: 'Arimo', 'sans-serif';
+	font-size:19px;
+	font-weight:bold;
+	color: #3588C9;
+	text-align: center;
+	margin-top:9px;
+	margin-left:0px;
+	background-color:#CCC;
+	
+}
+
+#apliko{
+	float:left;
+	width:100%;
+	margin-top:20px;
+	margin-left:24px;
+}
+
+#apliko #logoapliko{
+	float:left;
+	margin-top:0px;
+	margin-left:0px;
+	width:62px;
+	height:68px;
+}
+
+p#fabrica{
+	font-family: 'Arimo', 'sans-serif';
+	font-size:17px;
+	font-weight:bold;
+	text-shadow:#000 2px 2px 5px;
+	color: #FFF;
+	margin-top:35px;
+	margin-left:0px;
+}
+
+#info{
+	float:left;
+	margin-top:3px;
+	margin-left:0px;
+}
+
+#info p{
+	float:left;
+	width:90%;
+	font-family: 'Arimo', 'sans-serif';
+	font-size:14px;
+	font-weight:bold;
+	color: #3588C9;
+	text-align: center;
+	margin-top:0px;
+	margin-left:28px;
+}
+
+
