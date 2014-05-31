@@ -6,10 +6,7 @@ var redireccionar=false,exitPolla=false;
 var inf=0,inf2=0,inf3=0;
 var onDeviceReady=function()
 {
-   /*var parametros=getUrlVars();
-                idBet=parametros["idBet"];
-                nombreBet=parametros["nombreBet"];
-                getInfoBet(idBet);*/
+
 };
 		document.addEventListener("deviceready",onDeviceReady,false);
 
@@ -30,21 +27,7 @@ $(document).ready(
                 e.preventDefault();
                 $("#contenido1").toggle(); 
                 $("#btninfogeneral :hover").css("border-radius","0px"); 
-                /*if(inf==1){
-                    $("#btninfogeneral").css("border-bottom-left-radius","14px");
-                    $("#btninfogeneral").css("border-bottom-right-radius","14px");
-                    $("#btninfogeneral :hover").css("border-bottom-left-radius","14px");
-                    $("#btninfogeneral :hover").css("border-bottom-right-radius","14px");
-                    $("#contenido1").toggle(); 
-                    inf=0;
-                }else{
-                    inf=1;
-                    $("#btninfogeneral").css("border-bottom-left-radius","0px");
-                    $("#btninfogeneral").css("border-bottom-right-radius","0px");
-                    $("#btninfogeneral :hover").css("border-bottom-left-radius","0px");
-                    $("#btninfogeneral :hover").css("border-bottom-right-radius","0px");
-                    $("#contenido1").toggle(); 
-                }*/
+
             }
         );
         $("#btnparticipantes").click(
@@ -53,21 +36,7 @@ $(document).ready(
                 e.preventDefault();
                 $("#contenido2").toggle(); 
                 $("#btnparticipantes  :hover").css("border-radius","0px");
-                /*if(inf2==1){
-                    $("#btnparticipantes").css("border-bottom-left-radius","14px");
-                    $("#btnparticipantes").css("border-bottom-right-radius","14px");
-                    $("#btnparticipantes :hover").css("border-bottom-left-radius","14px");
-                    $("#btnparticipantes :hover").css("border-bottom-right-radius","14px");
-                    $("#contenido2").effect( "blind", {}, 500 ); 
-                    inf2=0;
-                }else{
-                    inf2=1;
-                    $("#btnparticipantes").css("border-bottom-left-radius","0px");
-                    $("#btnparticipantes").css("border-bottom-right-radius","0px");
-                    $("#btnparticipantes :hover").css("border-bottom-left-radius","0px");
-                    $("#btnparticipantes :hover").css("border-bottom-right-radius","0px");
-                    $("#contenido2").show( 'slide', { direction: "up" } , 500);
-                }*/
+
             }
         );
         $("#btninvitar").click(
@@ -76,21 +45,6 @@ $(document).ready(
                 e.preventDefault();
                 $("#contenido3").toggle(); 
                 $("#btninvitar  :hover").css("border-radius","0px");
-                /*if(inf3==1){
-                    $("#btninvitar").css("border-bottom-left-radius","14px");
-                    $("#btninvitar").css("border-bottom-right-radius","14px");
-                    $("#btninvitar :hover").css("border-bottom-left-radius","14px");
-                    $("#btninvitar :hover").css("border-bottom-right-radius","14px");
-                    $("#contenido3").effect( "blind", {}, 500 ); 
-                    inf3=0;
-                }else{
-                    inf3=1;
-                    $("#btninvitar").css("border-bottom-left-radius","0px");
-                    $("#btninvitar").css("border-bottom-right-radius","0px");
-                    $("#btninvitar :hover").css("border-bottom-left-radius","0px");
-                    $("#btninvitar :hover").css("border-bottom-right-radius","0px");
-                    $("#contenido3").show( 'slide', { direction: "up" } , 500);
-                }*/
             }
         );
         
@@ -163,19 +117,28 @@ $(document).ready(
                     //Elimino el primer caracter
                     usuarios=usuarios.substring(1);
                     correos=correos.substring(1);
-                    url=url_base+"bets/sendinvitation";
+                    url=url_base+"bets/sendinvitation2.xml";
                     datos={
                         idBet:idBet,
                         nombreBet: nombreBet,
                         usuarios: usuarios,
                         correos: correos,
-                        idioma:idioma
+                        idioma:idioma,
+                        idUsuario:getIdUsuario()
                     };
                     ajax(url,datos,function(xml2)
                          {
-                             bPopUpOpen("<p>Un email se envío a tus familiares y amigos para que se unan a la polla "+nombreBet+"</p>","aceptar");
-                             redireccionar=false;
-                             //redirigir("index.html");
+                             var obj=$(xml2).find("datos");
+                             var codigo=$("codigo",obj2).text();
+                             if(parseInt(codigo)==0)
+                             {
+                                 redireccionar=false;
+                                 var mens="<p>Un email se envío a tus familiares y amigos para que se unan a la polla "+nombreBet+"</p>"";
+                                 bPopUpOpen(mens,"aceptar");
+                             }else{
+                                 var mens=$("mensaje",obj2).text();
+                                 bPopUpOpen("<p>"+mens+"</p>","aceptar");
+                             }
                          });
                 }
             }

@@ -1,7 +1,7 @@
-var url_base="http://mundial.apliko.co/";
+//var url_base="http://mundial.apliko.co/";
 //var url_base="http://centroscomercialesweb.esy.es/";
 var idioma="PO";    
-//var url_base="http://192.168.0.11/PollaMundialistaWeb/";
+var url_base="http://192.168.0.13/PollaMundialistaWeb/";
 document.addEventListener("deviceready", onDeviceReady, false);
 
     // device APIs are available
@@ -88,6 +88,7 @@ function cambiarMensajePopUp(mensaje)
 //Muestra un dialogo que no se puede cerrar
 function bPopUpOpenCargando(mensaje)
 {
+ocultarBotonesMensjes();
     //$('#mensaje').html("<div align='center'><img src='images/loading.gif'  width='50px' height='50px' /><br><p align='center' width='100%'>"+mensaje+"</p></div>");
     $('#element_to_pop_up').css("background","none");
     $('#mensaje').html("<div align='center'><img src='images/loading.gif'  width='90px' height='55px' /></div>");
@@ -97,9 +98,16 @@ function bPopUpOpenCargando(mensaje)
     });
 
 }
+function ocultarBotonesMensjes()
+{
+    $("#aceptar").css("display","none");
+    $("#continuar").css("display","none");
+    $("#cancelar").css("display","none");
+}
 //Muestra un dialogo que no se puede cerrar
 function bPopUpOpen(mensaje,visibles)
 {
+	ocultarBotonesMensjes();
      $('#element_to_pop_up').css("background","#cccccc");
     visibles=visibles.split("-");
     visibles.forEach(function(entry) {
@@ -161,6 +169,7 @@ function ajax(url2, datos, callback)
             error: function( jqXHR, textStatus, errorThrown )
             {
                 console.log("errorThrown");
+				console.log("err: "+jqXHR.responseText);
                 callback(null);
 				bPopUpOpen("Esta aplicación requiere conexión de datos, verifica la señal de tu operador celular o conéctate a una red Wifi","continuar");
             },

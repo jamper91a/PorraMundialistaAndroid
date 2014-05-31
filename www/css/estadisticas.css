@@ -29,7 +29,7 @@ a{
 body{
 	background-image: url(../images/FondoPastoHome3.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     margin: 0px;
 }
 

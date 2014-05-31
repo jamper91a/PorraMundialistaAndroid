@@ -129,14 +129,14 @@ $(document).ready(
                     ajax(url,datos,function(xml2)
                          {
                              var obj=$(xml2).find("datos");
-                             var codigo=$("codigo",obj).text();
+                             var codigo=$("codigo",obj2).text();
                              if(parseInt(codigo)==0)
                              {
                                  redireccionar=false;
                                  var mens="<p>Un email se envío a tus familiares y amigos para que se unan a la polla "+nombreBet+"</p>"";
                                  bPopUpOpen(mens,"aceptar");
                              }else{
-                                 var mens=$("mensaje",obj).text();
+                                 var mens=$("mensaje",obj2).text();
                                  bPopUpOpen("<p>"+mens+"</p>","aceptar");
                              }
                          });

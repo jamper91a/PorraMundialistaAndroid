@@ -87,7 +87,7 @@ function agregarInvitacion(nombre, email)
 
 function crearPolla(nombre,premio,informacion,administrador)
 {
-    var url=url_base+"bets/add.xml";
+    var url=url_base+"bets/add2.xml";
     var datos={
         nombre:nombre,
         premio:premio,
@@ -126,14 +126,14 @@ function crearPolla(nombre,premio,informacion,administrador)
 							ajax(url,datos,function(xml2)
 								 {
 									 var obj2=$(xml2).find("datos");
-                                     var codigo2=$("codigo",obj).text();
+                                     var codigo2=$("codigo",obj2).text();
                                      if(parseInt(codigo2)==0)
                                      {
                                          redireccionar=true;
                                          var mens2="<p>"+nombre+ " creada con éxito, un email se envio a tus familiares y amigos para que se unan</p>";
                                          bPopUpOpen(mens2,"aceptar");
                                      }else{
-                                         var mens2=$("mensaje",obj).text();
+                                         var mens2=$("mensaje",obj2).text();
                                          bPopUpOpen("<p>"+mens2+"</p>","aceptar");
                                      }
 									 

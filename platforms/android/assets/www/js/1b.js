@@ -82,7 +82,8 @@ function registrar(nombres,apellidos,nick,email,pass)
              {
                 if(xml!=null)
                 {
-                    var id=$("datos",xml).text();
+                    var obj=$(xml).find("datos")
+                    var id=$("codigo",obj).text();
                     console.log("id: "+parseInt(id));
                     if(parseInt(id)>0)
                     {
@@ -92,11 +93,10 @@ function registrar(nombres,apellidos,nick,email,pass)
                         //crearVariableSesion("idUsuario",id);
                         //redirigir("7.html");
                         
-                    }else if(parseInt(id)==-1)
-                    {
                     }else if(parseInt(id)==-2)
                     {
-                        bPopUpOpen("<p>Ya existe un usuario registrado con ese email, intenta de nuevo","aceptar");
+						var mensaje=$("mensaje",obj).text();
+                        bPopUpOpen("<p>"+mensaje+"</p>","aceptar");
                     }
                     
                 }

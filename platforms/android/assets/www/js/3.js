@@ -87,7 +87,7 @@ function agregarInvitacion(nombre, email)
 
 function crearPolla(nombre,premio,informacion,administrador)
 {
-    var url=url_base+"bets/add.xml";
+    var url=url_base+"bets/add2.xml";
     var datos={
         nombre:nombre,
         premio:premio,
@@ -102,38 +102,52 @@ function crearPolla(nombre,premio,informacion,administrador)
                 if(xml!=null)
                 {
                     
-                    var idBet=$("datos",xml).text();
-                    console.log("id: "+idBet);
-                    
-                    //Ahora envio una invitacion a todas las personas 
-                    if(usuarios && correos)
-                    {
-                        //bPopUpOpenCargando("Enviando invitaciones");
-                        //Elimino el primer caracter
-                        usuarios=usuarios.substring(1);
-                        correos=correos.substring(1);
-                        url=url_base+"bets/sendinvitation";
-                        datos={
-                            idBet:idBet,
-                            nombreBet: nombre,
-                            usuarios: usuarios,
-                            correos: correos,
-                            idioma:idioma
-                        };
-                        ajax(url,datos,function(xml2)
-                             {
-                                 //bPopUpClosed();
-                                 redireccionar=true;
-                                 var mens="<p>"+nombre+ " creada con éxito, un email se envio a tus familiares y amigos para que se unan</p>";
-                                 bPopUpOpen(mens,"aceptar");
-                                 
-                                 
-                             });
-                    }else{
-                        redireccionar=true;
-                        var mens="<p>"+nombre+ " creada con éxito.</p>";
-                        bPopUpOpen(mens,"aceptar");
-                    }
+                    var obj=$(xml).find("datos");
+                    var idBet=$("codigo",obj).text();
+					if(parseInt(idBet)>0)
+					{
+						console.log("id: "+idBet);
+						//Ahora envio una invitacion a todas las personas 
+						if(usuarios && correos)
+						{
+							//bPopUpOpenCargando("Enviando invitaciones");
+							//Elimino el primer caracter
+							usuarios=usuarios.substring(1);
+							correos=correos.substring(1);
+							url=url_base+"bets/sendinvitation2.xml";
+							datos={
+								idBet:idBet,
+								nombreBet: nombre,
+								usuarios: usuarios,
+								correos: correos,
+								idioma:idioma,
+								idUsuario:getIdUsuario()
+							};
+							ajax(url,datos,function(xml2)
+								 {
+									 var obj2=$(xml2).find("datos");
+                                     var codigo2=$("codigo",obj2).text();
+                                     if(parseInt(codigo2)==0)
+                                     {
+                                         redireccionar=true;
+                                         var mens2="<p>"+nombre+ " creada con éxito, un email se envio a tus familiares y amigos para que se unan</p>";
+                                         bPopUpOpen(mens2,"aceptar");
+                                     }else{
+                                         var mens2=$("mensaje",obj2).text();
+                                         bPopUpOpen("<p>"+mens2+"</p>","aceptar");
+                                     }
+									 
+									 
+								 });
+						}else{
+							redireccionar=true;
+							var mens="<p>"+nombre+ " creada con éxito.</p>";
+							bPopUpOpen(mens,"aceptar");
+						}
+					}else{
+						var mens=$("mensaje",obj).text();
+						bPopUpOpen("<p>"+mens+"</p>","aceptar");
+					}
                     
                     
                     

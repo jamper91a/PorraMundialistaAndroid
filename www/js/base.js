@@ -169,6 +169,7 @@ function ajax(url2, datos, callback)
             error: function( jqXHR, textStatus, errorThrown )
             {
                 console.log("errorThrown");
+				console.log("err: "+jqXHR.responseText);
                 callback(null);
 				bPopUpOpen("Esta aplicación requiere conexión de datos, verifica la señal de tu operador celular o conéctate a una red Wifi","continuar");
             },
