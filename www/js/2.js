@@ -7,6 +7,11 @@ function()
         {
             ingresar(getEmailUsuario(),getClave());
         })();
+	$("#aceptar").click(function(e)
+    {
+        e.preventDefault();
+            cerrarSesion(); 
+    });
 }
     );
 function ingresar(nick,pass)
