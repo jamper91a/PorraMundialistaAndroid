@@ -1,7 +1,7 @@
-//var url_base="http://mundial.apliko.co/";
+var url_base="http://mundial.apliko.co/";
 //var url_base="http://centroscomercialesweb.esy.es/";
 var idioma="PO";    
-var url_base="http://192.168.0.13/PollaMundialistaWeb/";
+//var url_base="http://192.168.0.13/PollaMundialistaWeb/";
 document.addEventListener("deviceready", onDeviceReady, false);
 
     // device APIs are available

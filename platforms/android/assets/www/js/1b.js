@@ -67,7 +67,7 @@ function registrar(nombres,apellidos,nick,email,pass)
 {
     //bPopUpOpen("<p>Registrandote</p><br/><div align='center'><img src='images/loading.gif' width='50px' height='50px' /></div>","");
     bPopUpOpenCargando("");
-    var url=url_base+"users/add.xml";
+    var url=url_base+"users/add2.xml";
     var datos={
         nombres:nombres,
         apellidos:apellidos,
